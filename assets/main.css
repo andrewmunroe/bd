@@ -517,6 +517,9 @@ body {
   @media screen and (min-width: 1600px) {
     #home-container {
       background-size: cover; } }
+  @media screen and (min-width: 60em) {
+    #home-container {
+      font-size: 1.15em; } }
   #home-container .page-content {
     align-self: flex-end;
     width: 340px;
@@ -525,7 +528,12 @@ body {
 header#main {
   padding: 1.2rem 1.2rem 0.8rem;
   border: 2px solid #ffffff;
-  border-radius: 1px; }
+  border-radius: 1px;
+  max-width: 260px;
+  margin: 0 auto; }
+  @media screen and (min-width: 60em) {
+    header#main {
+      max-width: 300px; } }
 
 .post-content .row {
   display: block; }
@@ -605,7 +613,7 @@ header#main {
     .page .post-content .row div.left {
       margin: 0;
       padding-right: 1.5rem;
-      border-right: 2px solid #5a5a5a; }
+      border-right: 1px solid #b3b3b3; }
     .page .post-content .row div.right {
       margin: 0 0 0 1.5rem; } }
 a {
@@ -680,7 +688,8 @@ nav.main-nav {
     flex: 0 1 50%;
     font-size: 1.4em; }
     nav.main-nav .nav-menu.left {
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      text-align: right; }
     nav.main-nav .nav-menu.social {
       padding: 3rem 0 3rem 1rem;
       border-left: 2px solid #ffffff; }
@@ -702,7 +711,7 @@ nav.centre {
       flex-direction: column;
       margin: 0 0.75rem 1.5rem 0.75rem; }
       nav.centre h1 {
-        font-size: 2.1em;
+        font-size: 2em;
         text-transform: uppercase;
         margin: 0.5rem 0;
         padding: 1.5rem;
@@ -733,8 +742,11 @@ nav a {
     color: #ffffff; }
 
 .menu-container {
-  align-self: flex-end;
+  align-self: center;
   width: 340px; }
+  @media screen and (min-width: 60em) {
+    .menu-container {
+      font-size: 1.15em; } }
 
 body {
   font-family: "Roboto", serif;
@@ -768,7 +780,7 @@ header#main h1, header#main h2 {
     margin: 0.5rem 0 0;
     padding: 1.5rem;
     text-align: center;
-    border: 2px solid #5a5a5a;
+    border: 1px solid #b3b3b3;
     display: inline-block; }
 
 #story-list li span {
